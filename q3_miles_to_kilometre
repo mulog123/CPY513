@@ -1,0 +1,9 @@
+#Program: Converting miles into kilometers
+#By: David Fan
+
+#Requesting user to input number of miles
+miles = input("Hello! Input number of miles for conversion to kilometers: ")
+#Equation to convert miles to kilometers, float(miles) to convert string to float
+kilometers = (1/1.60934)*(float(miles))
+#Display answer
+print('{0:.3f}'.format(kilometers),"kilometers(3dp)")
