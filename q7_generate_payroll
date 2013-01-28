@@ -1,0 +1,22 @@
+#Program: Payroll
+#By: David Fan
+
+#Requesting user to input information
+name = input("Enter name: ")
+number_of_hours_worked_weekly = input("Enter number of hours worked weekly: ")
+hourly_pay_rate = input("Enter hourly pay rate: ")
+cpf_contribution_rate = input(" Enter CPF contribution rate(%): ")
+
+
+print("Payroll statement for " + (name))
+print("Number of hours worked in week = " + (number_of_hours_worked_weekly))
+print("Hourly pay rate = " + "$" + (hourly_pay_rate))
+
+gross_pay = (int(number_of_hours_worked_weekly))*(int(hourly_pay_rate))
+print("Gross pay = " + "$" + (str(gross_pay)))
+
+cpf_contribution = (float(int(cpf_contribution_rate)/100))*(int(gross_pay))
+print("CPF contribution at " + (str(cpf_contribution_rate))+ "%" + " = " + "$"+(str(cpf_contribution)))
+
+net_pay = (gross_pay) - (float(cpf_contribution))
+print("Net pay = " + "$" + (str(net_pay)))
