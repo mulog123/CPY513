@@ -1,0 +1,6 @@
+#Let integer(ASCII) be number
+number = input("Input integer from 0 to 127: ")
+#Let char be character
+char = chr(int(number))
+#Display answer
+print(char)
