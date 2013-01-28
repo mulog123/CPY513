@@ -1,0 +1,10 @@
+#Program: Converting Fahrenheit to Celsius
+#By: David Fan
+
+
+#Requesting user to input fahrenheit
+fahrenheit = input("Hello! Input fahrenheit for conversion to celsius: ")
+#Equation to convert fahrenheit to celsius, float(fahrenheit) changes string to float
+celsius = (5/9)*(float(fahrenheit) - 32)
+#Display answer
+print('{0:.2f}'.format(celsius),"degrees(2dp)")
