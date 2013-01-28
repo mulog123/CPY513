@@ -1,0 +1,13 @@
+#Program: Computing the volume of a cylinder
+#By: David Fan
+
+#Requesting user to input radius
+radius = input("Hello! Input radius to continue: ")
+#Requesting user to input length
+length = input("Hello! Input length to get the volume of your cylinder: ")
+#Equation to solve for area, float(radius) changes string to float
+area = (float(radius)*float(radius)*(22/7))
+#Equation to solve for volume, float(length) changes string to float
+volume = float(area)*float(length)
+#Display answer
+print('{0:.2f}'.format(volume),"volume(2dp)")
