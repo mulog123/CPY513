@@ -1,0 +1,16 @@
+#Program: Summing the digits in an integer
+#By: David Fan
+
+#Request user for integer between 0 to 1000
+integer = input("Hello! Input an integer between 0 to 1000: ")
+#Variable to sum up the digits
+sum_of_numbers = 0
+
+#Variable: i is the position of the number
+i = 0
+#len(integer) = length of integer. Length max 4. Position max 3(0, 1, 2, 3)
+while i < len(integer):    
+  sum_of_numbers = sum_of_numbers + int(integer[i])
+  i = i + 1
+#Display answer
+print(sum_of_numbers)
