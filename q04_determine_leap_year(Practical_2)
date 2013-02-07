@@ -1,0 +1,11 @@
+#Program: Determining leap year
+#By: David Fan
+
+#Requesting user to enter year
+year = int(input("Enter year: "))
+
+#check if year is leap year
+if year % 4 == 0:
+    print("Leap")
+else:
+    print("Non-leap")
