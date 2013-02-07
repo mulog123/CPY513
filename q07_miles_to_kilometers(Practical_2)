@@ -1,0 +1,11 @@
+#Program: Conversion from miles to kilometers
+#By: David Fan
+
+#Conversion from miles to kilometers
+print ("{0:6s}".format("Miles") + "{0:11s}".format("Kilometers") + "{0:11s}".format("Kilometers") + "{0:6}".format("Miles"))
+
+for miles in range (1, 11):
+    miles_to_kilometers = miles*1.609
+    kilometers_to_miles = (miles + 3)*5/1.609
+    print ("{0:<6}".format(miles) + "{0:<11.3f}".format(miles_to_kilometers) +
+           "{0:<11}".format((miles + 3)*5) + "{0:<6.3f}".format(kilometers_to_miles))
