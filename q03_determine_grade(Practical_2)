@@ -1,0 +1,25 @@
+#Program: Determining grade
+#By: David Fan
+
+#Requesting use to enter a score between 0 to 100
+score = int(input("Enter score: "))
+
+#Checking if score is valid
+if score < 0 or score > 100:
+    print("Invalid! Score must be within 0 - 100.")
+
+#Check for the grade
+if score in range(0,34):
+    print("U")
+elif score in range(35,44):
+    print("S")
+elif score in range(45,49):
+    print("E")
+elif score in range(50,54):
+    print("D")
+elif score in range(55,59):
+    print("C")
+elif score in range(60,69):
+    print("B")
+elif score in range(70,100):
+    print("A")
