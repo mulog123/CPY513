@@ -1,0 +1,33 @@
+#Program: Finding the number of days in a month
+#By: David Fan
+
+#Request user to input the month and year
+year = int(input("Enter year: "))
+month = int(input("Enter month: "))
+
+if month == 2 and year%4 == 0:
+    print("February" + " " + str(year) + " " + "has 29 days")
+elif month == 2 and year%4 != 0:
+    print("February" + " " + str(year) + " " + "has 28 days")
+elif month == 1 and year%4 != 0:
+    print("January" + " " + str(year) + " " + "has 31 days")
+elif month == 3 and year%4 != 0:
+    print("March" + " " + str(year) + " " + "has 31 days")
+elif month == 4 and year%4 != 0:
+    print("April" + " " + str(year) + " " + "has 30 days")
+elif month == 5 and year%4 != 0:
+    print("May" + " " + str(year) + " " + "has 31 days")
+elif month == 6 and year%4 != 0:
+    print("June" + " " + str(year) + " " + "has 30 days")
+elif month == 7 and year%4 != 0:
+    print("July" + " " + str(year) + " " + "has 31 days")
+elif month == 8 and year%4 != 0:
+    print("August" + " " + str(year) + " " + "has 31 days")
+elif month == 9 and year%4 != 0:
+    print("September" + " " + str(year) + " " + "has 30 days")
+elif month == 10 and year%4 != 0:
+    print("October" + " " + str(year) + " " + "has 31 days")
+elif month == 11 and year%4 != 0:
+    print("November" + " " + str(year) + " " + "has 30 days")
+elif month == 12 and year%4 != 0:
+    print("December" + " " + str(year) + " " + "has 31 days")
