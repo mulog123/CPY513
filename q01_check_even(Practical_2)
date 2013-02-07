@@ -1,0 +1,10 @@
+#Program: Checking whether a number is even
+#By: David Fan
+
+#Request user for integer
+x = input("Enter integer to continue: ")
+#Check if integer is an even number
+if int(x) % 2 == 1:
+    print(x + " is odd")
+else:
+    print(x + " is even")
