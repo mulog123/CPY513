@@ -1,0 +1,15 @@
+##Filename: q1_display_reverse.py
+##Author: David Fan
+
+##Define reverse_int and use 'for' loop
+def reverse_int(n):
+    x = 0
+    m = int(n)
+    for i in range(0, len(str(n))):
+        x = x*10 + m%10
+        m = m//10
+    return x
+
+##Request user for integer
+n = input("Input integer: ")
+print(reverse_int(n))
