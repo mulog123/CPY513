@@ -1,0 +1,26 @@
+##Fliename: q3_find_gcd.py
+##By: David Fan
+
+y = []
+z = []
+a = int(input("Input first number:"))
+b = int(input("Input your second number:"))
+for i in range(1, a+1):
+    if(a%i==0):
+        y.append(i)
+
+for i in range(1, b+1):
+    if(b%i==0):
+        z.append(i)
+
+
+w = set(y) & set(z)
+
+q = len(w)
+
+q = q - 1
+
+#print(y)
+#print(z)
+#print(w)
+print("Greatest common divisor = " + str(list(w)[q]))
