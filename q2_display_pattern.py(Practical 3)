@@ -1,0 +1,17 @@
+##Fliename: q2_display_pattern.py
+##By: David Fan
+##HELP: I DON'T KNOW HOW TO MAKE IT HORIZONTAL
+
+##Request user to enter integer for max number of patterns
+a = int(input("Display Pattern:"))
+
+##Define display pattern
+def display_pattern(n):
+   for i in range(1, n+2):
+       ##Leave spaces in between such that pattern will be more comprehensive
+       print(" ")
+       for w in range(1, i):
+           print(w)
+
+#Display pattern
+display_pattern(a)
